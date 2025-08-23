@@ -654,18 +654,18 @@
                 <a href="#ai-tools" onclick="showPage('ai-tools')" id="aiToolsLink">AI Tools</a>
                 <a href="#testimonials" onclick="showPage('testimonials')" id="testimonialsLink">Testimonials</a>
                 <a href="#contact" onclick="showPage('contact')" id="contactLink">Contact</a>
+                <div class="auth-buttons" id="authButtons">
+                    <button class="btn btn-secondary" id="loginBtn" onclick="showPage('login')">Login</button>
+                    <button class="btn" id="registerBtn" onclick="showPage('register')">Register</button>
+                </div>
+                
+                <div class="user-profile" id="userProfile" style="display: none;">
+                    <div class="user-avatar" id="userAvatar">U</div>
+                    <div class="user-name" id="userName">User</div>
+                    <button class="btn" id="logoutBtn" style="padding: 0.5rem 1rem;">Logout</button>
+                </div>
             </nav>
             
-            <div class="auth-buttons" id="authButtons">
-                <button class="btn btn-secondary" id="loginBtn" onclick="showPage('login')">Login</button>
-                <button class="btn" id="registerBtn" onclick="showPage('register')">Register</button>
-            </div>
-            
-            <div class="user-profile" id="userProfile" style="display: none;">
-                <div class="user-avatar" id="userAvatar">U</div>
-                <div class="user-name" id="userName">User</div>
-                <button class="btn" id="logoutBtn" style="padding: 0.5rem 1rem;">Logout</button>
-            </div>
             
             <select id="langSelect" class="language-selector" onchange="changeLanguage()">
                 <option value="en">English</option>
